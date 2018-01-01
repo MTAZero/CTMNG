@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42B0F41D-03D5-47C7-8B95-B2EAB6A6AC05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CreateDB</RootNamespace>
+    <AssemblyName>CreateDB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\WF.Presentation\GeneralManagement\bin\Debug\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Chuan\RM\RM\RM.Main\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppSession.cs" />
+    <Compile Include="ConfigApp.cs" />
+    <Compile Include="datasetDivisionShiftKey.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>datasetDivisionShiftKey.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Quiz\ANSWER.cs" />
+    <Compile Include="Quiz\ANSWERSHEET.cs" />
+    <Compile Include="Quiz\ANSWERSHEET_DETAILS.cs" />
+    <Compile Include="Quiz\ANSWERS_TEMP.cs" />
+    <Compile Include="Quiz\BAGOFTEST.cs" />
+    <Compile Include="Quiz\CONTEST.cs" />
+    <Compile Include="Quiz\CONTESTANT.cs" />
+    <Compile Include="Quiz\CONTESTANTS_SHIFTS.cs" />
+    <Compile Include="Quiz\CONTESTANTS_TESTS.cs" />
+    <Compile Include="Quiz\DIVISIONSHIFT_SUPERVISOR.cs" />
+    <Compile Include="Quiz\DIVISION_SHIFTS.cs" />
+    <Compile Include="Quiz\EXAMINATIONCOUNCIL_POSITIONS.cs" />
+    <Compile Include="Quiz\EXAMINATIONCOUNCIL_STAFFS.cs" />
+    <Compile Include="Quiz\FINGERPRINT.cs" />
+    <Compile Include="Quiz\LOCATION.cs" />
+    <Compile Include="Quiz\POSITION.cs" />
+    <Compile Include="Quiz\QUESTION.cs" />
+    <Compile Include="Quiz\QUESTIONS_TEMP.cs" />
+    <Compile Include="Quiz\Quiz.cs" />
+    <Compile Include="Quiz\ROOMDIAGRAM.cs" />
+    <Compile Include="Quiz\ROOMTEST.cs" />
+    <Compile Include="Quiz\SCHEDULE.cs" />
+    <Compile Include="Quiz\SHIFT.cs" />
+    <Compile Include="Quiz\STAFF.cs" />
+    <Compile Include="Quiz\STAFFS_POSITIONS.cs" />
+    <Compile Include="Quiz\SUBJECT.cs" />
+    <Compile Include="Quiz\SUBQUESTION.cs" />
+    <Compile Include="Quiz\SUBQUESTIONS_TEMP.cs" />
+    <Compile Include="Quiz\sysdiagram.cs" />
+    <Compile Include="Quiz\TEST.cs" />
+    <Compile Include="Quiz\TEST_DETAILS.cs" />
+    <Compile Include="Quiz\VIOLATION.cs" />
+    <Compile Include="Quiz\VIOLATIONS_CONTESTANTS.cs" />
+    <Compile Include="Report\DataSetDVKey.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetDVKey.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Encrypter.cs" />
+    <Compile Include="frmImportRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmImportRoom.Designer.cs">
+      <DependentUpon>frmImportRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoading2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoading2.Designer.cs">
+      <DependentUpon>frmLoading2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoading.Designer.cs">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReportKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportKey.Designer.cs">
+      <DependentUpon>frmReportKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReTrans.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReTrans.Designer.cs">
+      <DependentUpon>frmReTrans.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRoomConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoomConfig.Designer.cs">
+      <DependentUpon>frmRoomConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ANSWER.cs" />
+    <Compile Include="Main\ANSWERSHEET.cs" />
+    <Compile Include="Main\ANSWERSHEET_DETAILS.cs" />
+    <Compile Include="Main\BAGOFTEST.cs" />
+    <Compile Include="Main\CONTEST.cs" />
+    <Compile Include="Main\CONTESTANT.cs" />
+    <Compile Include="Main\CONTESTANTS_SHIFTS.cs" />
+    <Compile Include="Main\CONTESTANTS_SUBJECTS.cs" />
+    <Compile Include="Main\CONTESTANTS_TESTS.cs" />
+    <Compile Include="Main\CONTESTANT_TYPES.cs" />
+    <Compile Include="Main\CONTEST_FEES.cs" />
+    <Compile Include="Main\CONTEST_TYPES.cs" />
+    <Compile Include="Main\C__MigrationHistory.cs" />
+    <Compile Include="Main\DEMO_FINGERPRINTS.cs" />
+    <Compile Include="Main\DEPARTMENT.cs" />
+    <Compile Include="Main\DIVISION_SHIFTS.cs" />
+    <Compile Include="Main\EXAMINATIONCOUNCIL_POSITIONS.cs" />
+    <Compile Include="Main\EXAMINATIONCOUNCIL_STAFFS.cs" />
+    <Compile Include="Main\FINGERPRINT.cs" />
+    <Compile Include="Main\LOCATION.cs" />
+    <Compile Include="Main\Main.cs" />
+    <Compile Include="Main\MODULE.cs" />
+    <Compile Include="Main\ORIGINAL_TESTS.cs" />
+    <Compile Include="Main\ORIGINAL_TEST_DETAILS.cs" />
+    <Compile Include="Main\POSITION.cs" />
+    <Compile Include="Main\QUESTION.cs" />
+    <Compile Include="Main\QUESTION_TYPES.cs" />
+    <Compile Include="Main\RECEIPT.cs" />
+    <Compile Include="Main\REGISTER.cs" />
+    <Compile Include="Main\REGISTERS_SUBJECTS.cs" />
+    <Compile Include="Main\REMINDER.cs" />
+    <Compile Include="Main\ROOMDIAGRAM.cs" />
+    <Compile Include="Main\ROOMTEST.cs" />
+    <Compile Include="Main\SCHEDULE.cs" />
+    <Compile Include="Main\SHIFT.cs" />
+    <Compile Include="Main\STAFF.cs" />
+    <Compile Include="Main\STAFFS_POSITIONS.cs" />
+    <Compile Include="Main\STRUCTURE.cs" />
+    <Compile Include="Main\STRUCTURE_DETAILS.cs" />
+    <Compile Include="Main\SUBJECT.cs" />
+    <Compile Include="Main\SUBQUESTION.cs" />
+    <Compile Include="Main\sysdiagram.cs" />
+    <Compile Include="Main\TEST.cs" />
+    <Compile Include="Main\TEST_DETAILS.cs" />
+    <Compile Include="Main\TOPIC.cs" />
+    <Compile Include="Main\TOPICS_STAFFS.cs" />
+    <Compile Include="Main\VIOLATION.cs" />
+    <Compile Include="Main\VIOLATIONS_CONTESTANTS.cs" />
+    <Compile Include="MFrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MFrmMain.Designer.cs">
+      <DependentUpon>MFrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QuizMain\ANSWER.cs" />
+    <Compile Include="QuizMain\ANSWERSHEET.cs" />
+    <Compile Include="QuizMain\ANSWERSHEET_DETAILS.cs" />
+    <Compile Include="QuizMain\ANSWERS_TEMP.cs" />
+    <Compile Include="QuizMain\BAGOFTEST.cs" />
+    <Compile Include="QuizMain\CONTEST.cs" />
+    <Compile Include="QuizMain\CONTESTANT.cs" />
+    <Compile Include="QuizMain\CONTESTANTS_SHIFTS.cs" />
+    <Compile Include="QuizMain\CONTESTANTS_TESTS.cs" />
+    <Compile Include="QuizMain\DIVISIONSHIFT_SUPERVISOR.cs" />
+    <Compile Include="QuizMain\DIVISION_SHIFTS.cs" />
+    <Compile Include="QuizMain\EXAMINATIONCOUNCIL_POSITIONS.cs" />
+    <Compile Include="QuizMain\EXAMINATIONCOUNCIL_STAFFS.cs" />
+    <Compile Include="QuizMain\FINGERPRINT.cs" />
+    <Compile Include="QuizMain\LOCATION.cs" />
+    <Compile Include="QuizMain\POSITION.cs" />
+    <Compile Include="QuizMain\QUESTION.cs" />
+    <Compile Include="QuizMain\QUESTIONS_TEMP.cs" />
+    <Compile Include="QuizMain\QuizMain.cs" />
+    <Compile Include="QuizMain\ROOMDIAGRAM.cs" />
+    <Compile Include="QuizMain\ROOMTEST.cs" />
+    <Compile Include="QuizMain\SCHEDULE.cs" />
+    <Compile Include="QuizMain\SHIFT.cs" />
+    <Compile Include="QuizMain\STAFF.cs" />
+    <Compile Include="QuizMain\STAFFS_POSITIONS.cs" />
+    <Compile Include="QuizMain\SUBJECT.cs" />
+    <Compile Include="QuizMain\SUBQUESTION.cs" />
+    <Compile Include="QuizMain\SUBQUESTIONS_TEMP.cs" />
+    <Compile Include="QuizMain\TEST.cs" />
+    <Compile Include="QuizMain\TEST_DETAILS.cs" />
+    <Compile Include="QuizMain\VIOLATION.cs" />
+    <Compile Include="QuizMain\VIOLATIONS_CONTESTANTS.cs" />
+    <Compile Include="Report\frmReportComputer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmReportComputer.Designer.cs">
+      <DependentUpon>frmReportComputer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\frmReportKey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\frmReportKey.Designer.cs">
+      <DependentUpon>frmReportKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucComputerConfig.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucComputerConfig.Designer.cs">
+      <DependentUpon>ucComputerConfig.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmImportRoom.resx">
+      <DependentUpon>frmImportRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoading2.resx">
+      <DependentUpon>frmLoading2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoading.resx">
+      <DependentUpon>frmLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReportKey.resx">
+      <DependentUpon>frmReportKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReTrans.resx">
+      <DependentUpon>frmReTrans.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRoomConfig.resx">
+      <DependentUpon>frmRoomConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MFrmMain.resx">
+      <DependentUpon>MFrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Report\frmReportComputer.resx">
+      <DependentUpon>frmReportComputer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\frmReportKey.resx">
+      <DependentUpon>frmReportKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportRoomDiagrams.rdlc" />
+    <EmbeddedResource Include="Report\rptDivisionshiftKey.rdlc" />
+    <EmbeddedResource Include="rptDividionShift.rdlc" />
+    <EmbeddedResource Include="ucComputerConfig.resx">
+      <DependentUpon>ucComputerConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="datasetDivisionShiftKey.xsc">
+      <DependentUpon>datasetDivisionShiftKey.xsd</DependentUpon>
+    </None>
+    <None Include="datasetDivisionShiftKey.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>datasetDivisionShiftKey.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="datasetDivisionShiftKey.xss">
+      <DependentUpon>datasetDivisionShiftKey.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSetDVKey.xsc">
+      <DependentUpon>DataSetDVKey.xsd</DependentUpon>
+    </None>
+    <None Include="Report\DataSetDVKey.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetDVKey.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\DataSetDVKey.xss">
+      <DependentUpon>DataSetDVKey.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\keybooo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor-dubi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\monitor-hong.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

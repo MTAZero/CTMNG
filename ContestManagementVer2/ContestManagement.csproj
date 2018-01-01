@@ -1,0 +1,467 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DCC6C04C-9D2E-4BC6-A397-6F3AE57FDA65}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ContestManagementVer2</RootNamespace>
+    <AssemblyName>ContestManagementVer2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.2.0-beta1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.2.0-beta1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="MahApps.Metro, Version=1.5.0.23, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Shindo\Desktop\EXON_ExamManagement-master\EXON.RegiserManager\bin\Debug\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Shindo\Desktop\EXON_ExamManagement-master\EXON.RegiserManager\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Shindo\Desktop\EXON_ExamManagement-master\EXON.RegiserManager\bin\Debug\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\packages\MySql.Data.6.9.9\lib\net45\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity.EF6">
+      <HintPath>..\packages\MySql.Data.Entity.6.9.9\lib\net45\MySql.Data.Entity.EF6.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CSDL_Exonsytem\ANSWER.cs" />
+    <Compile Include="CSDL_Exonsytem\ANSWERSHEET.cs" />
+    <Compile Include="CSDL_Exonsytem\ANSWERSHEET_DETAILS.cs" />
+    <Compile Include="CSDL_Exonsytem\BAGOFTEST.cs" />
+    <Compile Include="CSDL_Exonsytem\CONTEST.cs" />
+    <Compile Include="CSDL_Exonsytem\CONTESTANT.cs" />
+    <Compile Include="CSDL_Exonsytem\CONTESTANTS_SHIFTS.cs" />
+    <Compile Include="CSDL_Exonsytem\CONTESTANTS_SUBJECTS.cs" />
+    <Compile Include="CSDL_Exonsytem\CONTESTANTS_TESTS.cs" />
+    <Compile Include="CSDL_Exonsytem\CONTESTANT_TYPES.cs" />
+    <Compile Include="CSDL_Exonsytem\CONTEST_FEES.cs" />
+    <Compile Include="CSDL_Exonsytem\CONTEST_TYPES.cs" />
+    <Compile Include="CSDL_Exonsytem\C__MigrationHistory.cs" />
+    <Compile Include="CSDL_Exonsytem\DEMO_FINGERPRINTS.cs" />
+    <Compile Include="CSDL_Exonsytem\DEPARTMENT.cs" />
+    <Compile Include="CSDL_Exonsytem\DIVISION_SHIFTS.cs" />
+    <Compile Include="CSDL_Exonsytem\EXAMINATIONCOUNCIL_POSITIONS.cs" />
+    <Compile Include="CSDL_Exonsytem\EXAMINATIONCOUNCIL_STAFFS.cs" />
+    <Compile Include="CSDL_Exonsytem\ExonSystem.cs" />
+    <Compile Include="CSDL_Exonsytem\FINGERPRINT.cs" />
+    <Compile Include="CSDL_Exonsytem\LOCATION.cs" />
+    <Compile Include="CSDL_Exonsytem\MODULE.cs" />
+    <Compile Include="CSDL_Exonsytem\ORIGINAL_TESTS.cs" />
+    <Compile Include="CSDL_Exonsytem\ORIGINAL_TEST_DETAILS.cs" />
+    <Compile Include="CSDL_Exonsytem\POSITION.cs" />
+    <Compile Include="CSDL_Exonsytem\QUESTION.cs" />
+    <Compile Include="CSDL_Exonsytem\QUESTION_TYPES.cs" />
+    <Compile Include="CSDL_Exonsytem\RECEIPT.cs" />
+    <Compile Include="CSDL_Exonsytem\REGISTER.cs" />
+    <Compile Include="CSDL_Exonsytem\REGISTERS_SUBJECTS.cs" />
+    <Compile Include="CSDL_Exonsytem\REMINDER.cs" />
+    <Compile Include="CSDL_Exonsytem\ROOMDIAGRAM.cs" />
+    <Compile Include="CSDL_Exonsytem\ROOMTEST.cs" />
+    <Compile Include="CSDL_Exonsytem\SCHEDULE.cs" />
+    <Compile Include="CSDL_Exonsytem\SHIFT.cs" />
+    <Compile Include="CSDL_Exonsytem\STAFF.cs" />
+    <Compile Include="CSDL_Exonsytem\STAFFS_POSITIONS.cs" />
+    <Compile Include="CSDL_Exonsytem\STRUCTURE.cs" />
+    <Compile Include="CSDL_Exonsytem\STRUCTURE_DETAILS.cs" />
+    <Compile Include="CSDL_Exonsytem\SUBJECT.cs" />
+    <Compile Include="CSDL_Exonsytem\SUBQUESTION.cs" />
+    <Compile Include="CSDL_Exonsytem\TEST.cs" />
+    <Compile Include="CSDL_Exonsytem\TEST_DETAILS.cs" />
+    <Compile Include="CSDL_Exonsytem\TOPIC.cs" />
+    <Compile Include="CSDL_Exonsytem\TOPICS_STAFFS.cs" />
+    <Compile Include="CSDL_Exonsytem\VIOLATION.cs" />
+    <Compile Include="CSDL_Exonsytem\VIOLATIONS_CONTESTANTS.cs" />
+    <Compile Include="CSDL_Luu Tru\ANSWER.cs" />
+    <Compile Include="CSDL_Luu Tru\ANSWERSHEET.cs" />
+    <Compile Include="CSDL_Luu Tru\ANSWERSHEET_DETAILS.cs" />
+    <Compile Include="CSDL_Luu Tru\ANSWERS_TEMP.cs" />
+    <Compile Include="CSDL_Luu Tru\BAGOFTEST.cs" />
+    <Compile Include="CSDL_Luu Tru\CONTEST.cs" />
+    <Compile Include="CSDL_Luu Tru\CONTESTANT.cs" />
+    <Compile Include="CSDL_Luu Tru\CONTESTANTS_SHIFTS.cs" />
+    <Compile Include="CSDL_Luu Tru\CONTESTANTS_TESTS.cs" />
+    <Compile Include="CSDL_Luu Tru\DIVISIONSHIFT_SUPERVISOR.cs" />
+    <Compile Include="CSDL_Luu Tru\DIVISION_SHIFTS.cs" />
+    <Compile Include="CSDL_Luu Tru\EXAMINATIONCOUNCIL_POSITIONS.cs" />
+    <Compile Include="CSDL_Luu Tru\EXAMINATIONCOUNCIL_STAFFS.cs" />
+    <Compile Include="CSDL_Luu Tru\FINGERPRINT.cs" />
+    <Compile Include="CSDL_Luu Tru\LOCATION.cs" />
+    <Compile Include="CSDL_Luu Tru\MTA_Quiz_Main.cs" />
+    <Compile Include="CSDL_Luu Tru\POSITION.cs" />
+    <Compile Include="CSDL_Luu Tru\QUESTION.cs" />
+    <Compile Include="CSDL_Luu Tru\QUESTIONS_TEMP.cs" />
+    <Compile Include="CSDL_Luu Tru\ROOMDIAGRAM.cs" />
+    <Compile Include="CSDL_Luu Tru\ROOMTEST.cs" />
+    <Compile Include="CSDL_Luu Tru\SCHEDULE.cs" />
+    <Compile Include="CSDL_Luu Tru\SHIFT.cs" />
+    <Compile Include="CSDL_Luu Tru\STAFF.cs" />
+    <Compile Include="CSDL_Luu Tru\STAFFS_POSITIONS.cs" />
+    <Compile Include="CSDL_Luu Tru\SUBJECT.cs" />
+    <Compile Include="CSDL_Luu Tru\SUBQUESTION.cs" />
+    <Compile Include="CSDL_Luu Tru\SUBQUESTIONS_TEMP.cs" />
+    <Compile Include="CSDL_Luu Tru\TEST.cs" />
+    <Compile Include="CSDL_Luu Tru\TEST_DETAILS.cs" />
+    <Compile Include="CSDL_Luu Tru\VIOLATION.cs" />
+    <Compile Include="CSDL_Luu Tru\VIOLATIONS_CONTESTANTS.cs" />
+    <Compile Include="DAO\DBService.cs" />
+    <Compile Include="DAO\Helper.cs" />
+    <Compile Include="Main\FrmKeHoachThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmKeHoachThi.Designer.cs">
+      <DependentUpon>FrmKeHoachThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmLapKeHoachThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmLapKeHoachThi.Designer.cs">
+      <DependentUpon>FrmLapKeHoachThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmLuaChonXepLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmLuaChonXepLich.Designer.cs">
+      <DependentUpon>FrmLuaChonXepLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmXacNhanPheDuyetKeHoach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmXacNhanPheDuyetKeHoach.Designer.cs">
+      <DependentUpon>FrmXacNhanPheDuyetKeHoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\FrmXepLich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\FrmXepLich.Designer.cs">
+      <DependentUpon>FrmXepLich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Start.cs" />
+    <Compile Include="Main\ucDanhSachDangKy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\ucDanhSachDangKy.Designer.cs">
+      <DependentUpon>ucDanhSachDangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ucLichThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\ucLichThi.Designer.cs">
+      <DependentUpon>ucLichThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ucThemCaThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\ucThemCaThi.Designer.cs">
+      <DependentUpon>ucThemCaThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ucThemDiaDiemPhongThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\ucThemDiaDiemPhongThi.Designer.cs">
+      <DependentUpon>ucThemDiaDiemPhongThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ucThemMonThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\ucThemMonThi.Designer.cs">
+      <DependentUpon>ucThemMonThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\ucThemPhanCongHoiDongThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Main\ucThemPhanCongHoiDongThi.Designer.cs">
+      <DependentUpon>ucThemPhanCongHoiDongThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\FrmRpKeHoachKiThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRpKeHoachKiThi.Designer.cs">
+      <DependentUpon>FrmRpKeHoachKiThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRpKetQuaTheoThiSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRpKetQuaTheoThiSinh.Designer.cs">
+      <DependentUpon>FrmRpKetQuaTheoThiSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRpPhanCongHoiDongThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRpPhanCongHoiDongThi.Designer.cs">
+      <DependentUpon>FrmRpPhanCongHoiDongThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRpKetQuaTheoMonThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRpKetQuaTheoMonThi.Designer.cs">
+      <DependentUpon>FrmRpKetQuaTheoMonThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRpThiSinhDangKyTheoMonThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRpThiSinhDangKyTheoMonThi.Designer.cs">
+      <DependentUpon>FrmRpThiSinhDangKyTheoMonThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRpKetQuaTheoCaThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRpKetQuaTheoCaThi.Designer.cs">
+      <DependentUpon>FrmRpKetQuaTheoCaThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\FrmRpLichThiTheoCaThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\FrmRpLichThiTheoCaThi.Designer.cs">
+      <DependentUpon>FrmRpLichThiTheoCaThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report\KeHoachThiDataSetxsd.cs">
+      <DependentUpon>KeHoachThiDataSetxsd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\KeHoachThiDataSetxsd.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KeHoachThiDataSetxsd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Report\ReportDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ThamSoHeThong.cs" />
+    <Compile Include="XepLichThi\XepLich.cs" />
+    <EmbeddedResource Include="Main\FrmKeHoachThi.resx">
+      <DependentUpon>FrmKeHoachThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmLapKeHoachThi.resx">
+      <DependentUpon>FrmLapKeHoachThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmLuaChonXepLich.resx">
+      <DependentUpon>FrmLuaChonXepLich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmXacNhanPheDuyetKeHoach.resx">
+      <DependentUpon>FrmXacNhanPheDuyetKeHoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\FrmXepLich.resx">
+      <DependentUpon>FrmXepLich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ucDanhSachDangKy.resx">
+      <DependentUpon>ucDanhSachDangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ucLichThi.resx">
+      <DependentUpon>ucLichThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ucThemCaThi.resx">
+      <DependentUpon>ucThemCaThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ucThemDiaDiemPhongThi.resx">
+      <DependentUpon>ucThemDiaDiemPhongThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ucThemMonThi.resx">
+      <DependentUpon>ucThemMonThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\ucThemPhanCongHoiDongThi.resx">
+      <DependentUpon>ucThemPhanCongHoiDongThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRpKeHoachKiThi.resx">
+      <DependentUpon>FrmRpKeHoachKiThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRpKetQuaTheoThiSinh.resx">
+      <DependentUpon>FrmRpKetQuaTheoThiSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRpPhanCongHoiDongThi.resx">
+      <DependentUpon>FrmRpPhanCongHoiDongThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRpKetQuaTheoMonThi.resx">
+      <DependentUpon>FrmRpKetQuaTheoMonThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRpThiSinhDangKyTheoMonThi.resx">
+      <DependentUpon>FrmRpThiSinhDangKyTheoMonThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRpKetQuaTheoCaThi.resx">
+      <DependentUpon>FrmRpKetQuaTheoCaThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\FrmRpLichThiTheoCaThi.resx">
+      <DependentUpon>FrmRpLichThiTheoCaThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpHoiDongThi.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpKeHoachKiThi.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpKetQuaTheoCaThi.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpKetQuaThiTheoThiSinh.rdlc">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\rpLichThiTheoCaThi.rdlc" />
+    <EmbeddedResource Include="Report\rpKetQuaTheoMonThi.rdlc" />
+    <EmbeddedResource Include="Report\rpThiSinhDangKyTheoMonThi.rdlc" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Report\KeHoachThiDataSetxsd.xsc">
+      <DependentUpon>KeHoachThiDataSetxsd.xsd</DependentUpon>
+    </None>
+    <None Include="Report\KeHoachThiDataSetxsd.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KeHoachThiDataSetxsd.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\KeHoachThiDataSetxsd.xss">
+      <DependentUpon>KeHoachThiDataSetxsd.xsd</DependentUpon>
+    </None>
+    <None Include="Report\ReportDataSet.xsc">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Report\ReportDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ReportDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Report\ReportDataSet.xss">
+      <DependentUpon>ReportDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EXON.Common\EXON.Common.csproj">
+      <Project>{DF92320D-CD11-499B-8002-FF00B40F101A}</Project>
+      <Name>EXON.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON.Data\EXON.Data.csproj">
+      <Project>{353009D7-CCE4-4D0D-8374-C9E8ACCD2F39}</Project>
+      <Name>EXON.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON_EM.Data\EXON_EM.Data.csproj">
+      <Project>{92C00DFD-B9ED-4859-84EC-ECE17C9B1743}</Project>
+      <Name>EXON_EM.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

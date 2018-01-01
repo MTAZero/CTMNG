@@ -1,0 +1,42 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:String x:Key="ID_TITLE">Giám sát phòng thi</sys:String>
+    <sys:String x:Key="ID_LOGIN">Login</sys:String>
+    <sys:String x:Key="ID_IP" >IP:</sys:String>
+    <sys:String x:Key="ID_PORT" >Port:</sys:String>
+    <sys:String x:Key="ID_USERNAME" >UserName:</sys:String>
+    <sys:String x:Key="ID_PASSWORD" >Password:</sys:String>
+    <sys:String x:Key="ID_OK" >OK</sys:String>
+    <sys:String x:Key="ID_GENERAL" >General</sys:String>
+    <sys:String x:Key="ID_PTZ" >PTZ</sys:String>
+    <sys:String x:Key="ID_ADD_DEVICE" >Thêm Camera</sys:String>
+    <sys:String x:Key="ID_DEL_DEVICE" >Xóa Camera</sys:String>
+    <sys:String x:Key="ID_STOPREAL" >StopReal</sys:String>
+    <sys:String x:Key="ID_STOPALLREAL" >StopALlReal</sys:String>
+    <sys:String x:Key="ID_OPENSOUND" >OpenSound</sys:String>
+    <sys:String x:Key="ID_CLOSESOUND" >CloseSound</sys:String>
+    <sys:String x:Key="ID_SAVEREALDATA" >SaveRealData</sys:String>
+    <sys:String x:Key="ID_STOPREALDATA" >StopRealData</sys:String>
+    <sys:String x:Key="ID_CAPTURE" >Chụp ảnh</sys:String>
+    <sys:String x:Key="ID_DEVICELIST" >DeviceList</sys:String>
+    <sys:String x:Key="ID_ZOOM" >Zoom:</sys:String>
+    <sys:String x:Key="ID_FOCUS" >Focus:</sys:String>
+    <sys:String x:Key="ID_APERTURE" >Aperture:</sys:String>
+
+
+    <sys:String x:Key="ID_LOGIN_IP_ERROR" >Please input ip address!</sys:String>
+    <sys:String x:Key="ID_LOGIN_PORT_ERROR" >Please input port!</sys:String>
+    <sys:String x:Key="ID_LOGIN_USERNAME_ERROR" >Please input username!</sys:String>
+
+    <sys:String x:Key="ID_ONLINE" >(online)</sys:String>
+    <sys:String x:Key="ID_OFFLINE">(offline)</sys:String>
+    <sys:String x:Key="ID_CHANNEL">Kênh</sys:String>
+
+    <sys:String x:Key="ID_MAINSTREAM" >main stream</sys:String>
+    <sys:String x:Key="ID_SUBSTREAM" >sub stream</sys:String>
+
+    <sys:String x:Key="ID_PORTERROR">Port is out of range!</sys:String>
+
+</ResourceDictionary>

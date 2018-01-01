@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50EB048D-9A15-42D0-9B2A-2011EF3E30BA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EXON_ExamManagement</RootNamespace>
+    <AssemblyName>EXON_ExamManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationIcon>EXON.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Shindo\Desktop\EXON_ExamManagement-master\EXON.RegiserManager\bin\Debug\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Shindo\Desktop\EXON_ExamManagement-master\EXON.RegiserManager\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Users\Shindo\Desktop\EXON_ExamManagement-master\EXON.RegiserManager\bin\Debug\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.ServiceModel.DomainServices.EntityFramework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GUI\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\FrmQuanLyKiThi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\FrmQuanLyKiThi.Designer.cs">
+      <DependentUpon>FrmQuanLyKiThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThamSoHeThong.cs" />
+    <Compile Include="UC\LapKeHoachKiThi\ucLapKeHoachThiHelper.cs" />
+    <Compile Include="UC\LapKeHoachKiThi\ucHoanThanhKeHoach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\LapKeHoachKiThi\ucHoanThanhKeHoach.Designer.cs">
+      <DependentUpon>ucHoanThanhKeHoach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\LapKeHoachKiThi\ucThongTinKiThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\LapKeHoachKiThi\ucThongTinKiThi.Designer.cs">
+      <DependentUpon>ucThongTinKiThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\LapKeHoachKiThi\ucThemCaThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\LapKeHoachKiThi\ucThemCaThi.Designer.cs">
+      <DependentUpon>ucThemCaThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\LapKeHoachKiThi\ucThemDiaDiemThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\LapKeHoachKiThi\ucThemDiaDiemThi.Designer.cs">
+      <DependentUpon>ucThemDiaDiemThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\LapKeHoachKiThi\ucThemHoiDongThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\LapKeHoachKiThi\ucThemHoiDongThi.Designer.cs">
+      <DependentUpon>ucThemHoiDongThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\LapKeHoachKiThi\ucThemMonThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\LapKeHoachKiThi\ucThemMonThi.Designer.cs">
+      <DependentUpon>ucThemMonThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucChucNangQuanLy.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucChucNangQuanLy.Designer.cs">
+      <DependentUpon>ucChucNangQuanLy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\ucTrangThaiKiThi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\ucTrangThaiKiThi.Designer.cs">
+      <DependentUpon>ucTrangThaiKiThi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UI\ucBtnStep.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UI\ucBtnStep.Designer.cs">
+      <DependentUpon>ucBtnStep.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\FrmQuanLyKiThi.resx">
+      <DependentUpon>FrmQuanLyKiThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UC\LapKeHoachKiThi\ucHoanThanhKeHoach.resx">
+      <DependentUpon>ucHoanThanhKeHoach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\LapKeHoachKiThi\ucThongTinKiThi.resx">
+      <DependentUpon>ucThongTinKiThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\LapKeHoachKiThi\ucThemCaThi.resx">
+      <DependentUpon>ucThemCaThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\LapKeHoachKiThi\ucThemDiaDiemThi.resx">
+      <DependentUpon>ucThemDiaDiemThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\LapKeHoachKiThi\ucThemHoiDongThi.resx">
+      <DependentUpon>ucThemHoiDongThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\LapKeHoachKiThi\ucThemMonThi.resx">
+      <DependentUpon>ucThemMonThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucChucNangQuanLy.resx">
+      <DependentUpon>ucChucNangQuanLy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\ucTrangThaiKiThi.resx">
+      <DependentUpon>ucTrangThaiKiThi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UI\ucBtnStep.resx">
+      <DependentUpon>ucBtnStep.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EXON.ico" />
+    <None Include="Resources\step7.png" />
+    <None Include="Resources\LogoHVnew3.png" />
+    <None Include="Resources\step6.png" />
+    <None Include="Resources\step5.png" />
+    <None Include="Resources\step4.png" />
+    <None Include="Resources\step3.png" />
+    <None Include="Resources\step2.png" />
+    <None Include="Resources\step1.png" />
+    <None Include="GUI\Content\Image\Buoc 2.png" />
+    <None Include="GUI\Content\Image\Buoc 3.png" />
+    <None Include="GUI\Content\Image\Buoc 1.png" />
+    <None Include="GUI\Content\Image\Buoc 4.png" />
+    <None Include="GUI\Content\Image\Buoc1.png" />
+    <None Include="GUI\Content\Image\HoanThanh.png" />
+    <Content Include="GUI\Content\Image\LogoHVnew1.png" />
+    <None Include="GUI\Content\Image\MonThi.png" />
+    <None Include="GUI\Content\Image\Step 1.png" />
+    <None Include="GUI\Content\Image\next.png" />
+    <Content Include="GUI\Content\Image\step1.png" />
+    <Content Include="GUI\Content\Image\step11.png" />
+    <Content Include="GUI\Content\Image\step2-gray.png" />
+    <Content Include="GUI\Content\Image\step2.png" />
+    <Content Include="GUI\Content\Image\step21.png" />
+    <Content Include="GUI\Content\Image\step3-gray.png" />
+    <Content Include="GUI\Content\Image\step3.png" />
+    <Content Include="GUI\Content\Image\step31.png" />
+    <Content Include="GUI\Content\Image\step4-gray.png" />
+    <Content Include="GUI\Content\Image\step4.png" />
+    <Content Include="GUI\Content\Image\step41.png" />
+    <Content Include="GUI\Content\Image\step5-gray.png" />
+    <Content Include="GUI\Content\Image\step5.png" />
+    <Content Include="GUI\Content\Image\step51.png" />
+    <Content Include="GUI\Content\Image\step6-gray.png" />
+    <Content Include="GUI\Content\Image\step6.png" />
+    <Content Include="GUI\Content\Image\step61.png" />
+    <Content Include="GUI\Content\Image\step62.png" />
+    <Content Include="GUI\Content\Image\step63.png" />
+    <Content Include="GUI\Content\Image\step64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContestManagementVer2\ContestManagement.csproj">
+      <Project>{dcc6c04c-9d2e-4bc6-a397-6f3ae57fda65}</Project>
+      <Name>ContestManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CreateDB\CreateDB.csproj">
+      <Project>{42b0f41d-03d5-47c7-8b95-b2eab6a6ac05}</Project>
+      <Name>CreateDB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EOS.Main\EXON.TestGenerate.csproj">
+      <Project>{42633f0f-45cf-4897-a895-bd0888ff68c2}</Project>
+      <Name>EXON.TestGenerate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ExamManagement\ExamManagement.csproj">
+      <Project>{55747b87-afbd-4e79-b7b7-d5c076b8818b}</Project>
+      <Name>ExamManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON.Common\EXON.Common.csproj">
+      <Project>{df92320d-cd11-499b-8002-ff00b40f101a}</Project>
+      <Name>EXON.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON.Data\EXON.Data.csproj">
+      <Project>{353009D7-CCE4-4D0D-8374-C9E8ACCD2F39}</Project>
+      <Name>EXON.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON.GenerateTest\EXON.GenerateTest.csproj">
+      <Project>{8873b75a-9bc4-4931-8cb3-01d5c600824e}</Project>
+      <Name>EXON.GenerateTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON.Model\EXON.Model.csproj">
+      <Project>{B89723B7-C9BB-49C5-97B2-81F7FE7750CE}</Project>
+      <Name>EXON.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON.RegiserManager\EXON.RegisterManager.csproj">
+      <Project>{7975717d-162a-43a7-a669-dafb51b3b308}</Project>
+      <Name>EXON.RegisterManager</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON_EM.Data\EXON_EM.Data.csproj">
+      <Project>{92c00dfd-b9ed-4859-84ec-ece17c9b1743}</Project>
+      <Name>EXON_EM.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\QuanLyHoiDongThiVer2\QuanLyHoiDongThiVer2.csproj">
+      <Project>{0b80e0f0-2a8c-4513-a473-78082db37436}</Project>
+      <Name>QuanLyHoiDongThiVer2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WF.Presentation\Demo\RM.GetFinger.csproj">
+      <Project>{3f474751-156a-49d0-998c-1bd6c4058784}</Project>
+      <Name>RM.GetFinger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WF.Presentation\GeneralManagement\GeneralManagement.csproj">
+      <Project>{aaa479e7-95af-4d3b-88cf-3695be8e7e8f}</Project>
+      <Name>GeneralManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WF.Presentation\NetSDKCS\NetSDKCS.csproj">
+      <Project>{fa7964c5-a945-4685-9003-34736cfd5051}</Project>
+      <Name>NetSDKCS</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

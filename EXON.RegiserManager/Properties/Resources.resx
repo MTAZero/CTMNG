@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="bbiStructureTestDescription" xml:space="preserve">
+    <value>Cấu Trúc Đề</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Lỗi</value>
+  </data>
+  <data name="DisplayMemberQuestionType" xml:space="preserve">
+    <value>QuestionTypeName</value>
+  </data>
+  <data name="NotContestainMessage" xml:space="preserve">
+    <value>Chưa Có Thí Sinh Thi</value>
+  </data>
+  <data name="WatchOriginalTest" xml:space="preserve">
+    <value>Xem Đề Thi</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="refresh162" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\refresh162.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bbiQuestionTypeDescription" xml:space="preserve">
+    <value>Tạo Loại Câu Hỏi</value>
+  </data>
+  <data name="filter" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\filter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StructureTestName" xml:space="preserve">
+    <value>Cấu Trúc Đề Thi</value>
+  </data>
+  <data name="NotSelectStaff" xml:space="preserve">
+    <value>Bạn Chưa Chọn Người Nhận</value>
+  </data>
+  <data name="Level3" xml:space="preserve">
+    <value>Mức Vận Dụng</value>
+  </data>
+  <data name="During" xml:space="preserve">
+    <value>Đang Thực Hiện</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>Thành Công</value>
+  </data>
+  <data name="NotOriginalTestMessage" xml:space="preserve">
+    <value>Chưa Có Đề Thi Gốc Được Hoặc Chưa Được Phê Duyệt.\n Tạo Đề Thi Gốc Trước.</value>
+  </data>
+  <data name="NotLoginMessage" xml:space="preserve">
+    <value>Mật Khẩu Sai Hoặc Tài Khoản Không Tồn Tại</value>
+  </data>
+  <data name="OriginalTestCreateSuccess" xml:space="preserve">
+    <value>Tạo Đề Thi Gốc Thành Công, Bấm Xem Đề Thi Để Xem Chi Tiết</value>
+  </data>
+  <data name="Update" xml:space="preserve">
+    <value>Lưu Thay Đổi</value>
+  </data>
+  <data name="bbiTaskDescription" xml:space="preserve">
+    <value>Phân Công</value>
+  </data>
+  <data name="QuestionContent" xml:space="preserve">
+    <value>Đoạn Văn</value>
+  </data>
+  <data name="bbiThiSinh" xml:space="preserve">
+    <value>Thí Sinh</value>
+  </data>
+  <data name="NotEnoughQuestionMessage" xml:space="preserve">
+    <value>Không Đủ Câu Hỏi</value>
+  </data>
+  <data name="Quiz" xml:space="preserve">
+    <value>Trắc Nghiệm</value>
+  </data>
+  <data name="WarningDialog" xml:space="preserve">
+    <value>Cảnh Báo</value>
+  </data>
+  <data name="Notification" xml:space="preserve">
+    <value>Thông Báo</value>
+  </data>
+  <data name="NotDuringTestMessage" xml:space="preserve">
+    <value>Chưa Đến Hoặc Quá Hạn Tạo Đề</value>
+  </data>
+  <data name="bbiTestDescription" xml:space="preserve">
+    <value>Sinh Đề Thi</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>Mới</value>
+  </data>
+  <data name="ValueMemberTopic" xml:space="preserve">
+    <value>TopicID</value>
+  </data>
+  <data name="Font" xml:space="preserve">
+    <value>Arial</value>
+  </data>
+  <data name="search24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bbiMyTaskDescription" xml:space="preserve">
+    <value>Công Việc</value>
+  </data>
+  <data name="search16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ProgressPanelDescription" xml:space="preserve">
+    <value>Loading ...</value>
+  </data>
+  <data name="NotScheduleMessage" xml:space="preserve">
+    <value>Chưa Có Lịch Thi</value>
+  </data>
+  <data name="NotRowMessage" xml:space="preserve">
+    <value>Chọn Một Dòng</value>
+  </data>
+  <data name="add16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="YesNoMessage" xml:space="preserve">
+    <value>Bạn Đã Chắc Chắn Chưa?</value>
+  </data>
+  <data name="NotConnectServerMessage" xml:space="preserve">
+    <value>Không Thể Kết Nối Server</value>
+  </data>
+  <data name="NotStructureMessage" xml:space="preserve">
+    <value>Chưa Có Cấu Trúc Đề</value>
+  </data>
+  <data name="bbiChangePassword" xml:space="preserve">
+    <value>Đổi Mật Khẩu</value>
+  </data>
+  <data name="NotInputMessage" xml:space="preserve">
+    <value>Bạn Nhập Thiếu</value>
+  </data>
+  <data name="HaveOriginalTestMessage" xml:space="preserve">
+    <value>Đã Có Đề Thi Gốc. Bạn Có Muốn Tạo Thêm Không?</value>
+  </data>
+  <data name="ProgressPanelCaption" xml:space="preserve">
+    <value>Vui Lòng Chờ</value>
+  </data>
+  <data name="NotQuestionMessage" xml:space="preserve">
+    <value>Chưa Có Dữ Liệu Câu Hỏi</value>
+  </data>
+  <data name="SmallDateStartMessage" xml:space="preserve">
+    <value>Ngày Giờ Kết Thúc Không Được Nhỏ Hơn Bắt Đầu</value>
+  </data>
+  <data name="Level2" xml:space="preserve">
+    <value>Mức Thông Hiểu</value>
+  </data>
+  <data name="bbiQuestionDescription" xml:space="preserve">
+    <value>Tạo Câu Hỏi</value>
+  </data>
+  <data name="ListContest" xml:space="preserve">
+    <value>Danh Sách Kỳ Thi</value>
+  </data>
+  <data name="Complete" xml:space="preserve">
+    <value>Hoàn Thành</value>
+  </data>
+  <data name="Answer" xml:space="preserve">
+    <value>Câu Trả Lời</value>
+  </data>
+  <data name="ValueMemberQuestionType" xml:space="preserve">
+    <value>QuestionTypeID</value>
+  </data>
+  <data name="bbiLogout" xml:space="preserve">
+    <value>Thoát</value>
+  </data>
+  <data name="Essay" xml:space="preserve">
+    <value>Tự Luận</value>
+  </data>
+  <data name="Insert" xml:space="preserve">
+    <value>Thêm Mới</value>
+  </data>
+  <data name="RulelsTooMuchLenght" xml:space="preserve">
+    <value>Tên Quá Dài</value>
+  </data>
+  <data name="exl16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exl16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Excel-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Excel-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="NotSelectQuestionTypeMessage" xml:space="preserve">
+    <value>Chưa Chọn Kiểu Câu Hỏi</value>
+  </data>
+  <data name="ShowOriginalMessage" xml:space="preserve">
+    <value>Bấm Xem Đề Thi Để Xem Chi Tiết</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>Câu Hỏi</value>
+  </data>
+  <data name="Level4" xml:space="preserve">
+    <value>Mức Vận Dụng Cao</value>
+  </data>
+  <data name="Level" xml:space="preserve">
+    <value>Độ Khó</value>
+  </data>
+  <data name="bbiDangKi" xml:space="preserve">
+    <value>Đăng Kí</value>
+  </data>
+  <data name="MakeOriginalTestWithNum" xml:space="preserve">
+    <value>Tạo Đề Thi Gốc Với Số Lượng</value>
+  </data>
+  <data name="bbiTopicDescription" xml:space="preserve">
+    <value>Chủ Đề Môn Học</value>
+  </data>
+  <data name="TypeQuestionName" xml:space="preserve">
+    <value>Loại Câu Hỏi </value>
+  </data>
+  <data name="DisplayMemberTopic" xml:space="preserve">
+    <value>TopicName</value>
+  </data>
+  <data name="Subject" xml:space="preserve">
+    <value>Môn Học</value>
+  </data>
+  <data name="Level1" xml:space="preserve">
+    <value>Mức Nhận Biết</value>
+  </data>
+  <data name="Over" xml:space="preserve">
+    <value>Quá Hạn</value>
+  </data>
+  <data name="SmallDateMessage" xml:space="preserve">
+    <value>Ngày Giờ Bắt Đầu Không Được Nhỏ Hơn Hiện Tại</value>
+  </data>
+  <data name="delete16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RuleIsNotBlankWarning" xml:space="preserve">
+    <value>Không được để trống</value>
+  </data>
+  <data name="ValueMemberSubject" xml:space="preserve">
+    <value>SubjectID</value>
+  </data>
+  <data name="QuestionName" xml:space="preserve">
+    <value>Câu Hỏi</value>
+  </data>
+  <data name="bbiOriginalTestDescription" xml:space="preserve">
+    <value>Đề Thi Gốc </value>
+  </data>
+  <data name="Actions-list-add-icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Actions-list-add-icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DisplayMemberSubject" xml:space="preserve">
+    <value>SubjectName</value>
+  </data>
+  <data name="Accepted" xml:space="preserve">
+    <value>Đã Phê Duyệt</value>
+  </data>
+  <data name="NotSelectStaffMessage" xml:space="preserve">
+    <value>Chưa Chọn Chủ Đề</value>
+  </data>
+  <data name="delete161" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete161.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MessageDeleteSuccess" xml:space="preserve">
+    <value>Xóa Thành Công</value>
+  </data>
+  <data name="check16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\check16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>

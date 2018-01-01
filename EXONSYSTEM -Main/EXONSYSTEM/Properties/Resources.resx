@@ -1,0 +1,472 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="IMG_ERROR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\error.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_INFORMATION" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\information.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG_CON_0001" xml:space="preserve">
+    <value>Lỗi kết nối</value>
+  </data>
+  <data name="MSG_LOG_ERROR" xml:space="preserve">
+    <value>ERROR</value>
+  </data>
+  <data name="MSG_LOG_FATAL" xml:space="preserve">
+    <value>FATAL</value>
+  </data>
+  <data name="MSG_LOG_INFO" xml:space="preserve">
+    <value>INFO</value>
+  </data>
+  <data name="MSG_LOG_WARN" xml:space="preserve">
+    <value>WARN</value>
+  </data>
+  <data name="MSG_MESS_0001" xml:space="preserve">
+    <value>Thông báo!</value>
+  </data>
+  <data name="MSG_MESS_0002" xml:space="preserve">
+    <value>Vui lòng nhập {0}</value>
+  </data>
+  <data name="MSG_MESS_0003" xml:space="preserve">
+    <value>Vui lòng nhập mật khẩu.</value>
+  </data>
+  <data name="MSG_MESS_0004" xml:space="preserve">
+    <value>{0} không tồn tại</value>
+  </data>
+  <data name="MSG_MESS_0005" xml:space="preserve">
+    <value>Đăng nhập thành công!</value>
+  </data>
+  <data name="MSG_MESS_0006" xml:space="preserve">
+    <value>Chúc mừng {0} đăng nhập thành công</value>
+  </data>
+  <data name="MSG_MESS_0007" xml:space="preserve">
+    <value>SUCCESSFULLY!</value>
+  </data>
+  <data name="MSG_MESS_0008" xml:space="preserve">
+    <value>START FUNCTION</value>
+  </data>
+  <data name="MSG_MESS_0009" xml:space="preserve">
+    <value>END OF FUNCTION</value>
+  </data>
+  <data name="IMG_NOTIFICATION" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notifications.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="IMG_SUCCESS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\success.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MSG_GUI_0001" xml:space="preserve">
+    <value>Họ tên</value>
+  </data>
+  <data name="MSG_GUI_0002" xml:space="preserve">
+    <value>Ngày sinh</value>
+  </data>
+  <data name="MSG_GUI_0003" xml:space="preserve">
+    <value>Mã thí sinh</value>
+  </data>
+  <data name="MSG_GUI_0004" xml:space="preserve">
+    <value>➤ Thông tin thí sinh</value>
+  </data>
+  <data name="MSG_GUI_0005" xml:space="preserve">
+    <value>➤ Thông tin kỳ thi</value>
+  </data>
+  <data name="MSG_GUI_0006" xml:space="preserve">
+    <value>Tên kỳ thi</value>
+  </data>
+  <data name="MSG_GUI_0007" xml:space="preserve">
+    <value>Ngày thi</value>
+  </data>
+  <data name="MSG_GUI_0008" xml:space="preserve">
+    <value>Môn thi</value>
+  </data>
+  <data name="MSG_MESS_0010" xml:space="preserve">
+    <value>FORMCLOSE</value>
+  </data>
+  <data name="MSG_MESS_0011" xml:space="preserve">
+    <value>CLOSED</value>
+  </data>
+  <data name="MSG_MESS_0012" xml:space="preserve">
+    <value>Đang tải đề thi...</value>
+  </data>
+  <data name="MSG_GUI_0009" xml:space="preserve">
+    <value>&amp;Báo lỗi</value>
+  </data>
+  <data name="MSG_GUI_0010" xml:space="preserve">
+    <value>&amp;Sẵn sàng</value>
+  </data>
+  <data name="MSG_GUI_0011" xml:space="preserve">
+    <value>&amp;Nộp bài</value>
+  </data>
+  <data name="MSG_MESS_0013" xml:space="preserve">
+    <value>Gửi thông tin lên server thành công!</value>
+  </data>
+  <data name="MSG_MESS_0014" xml:space="preserve">
+    <value>Lỗi không xác định</value>
+  </data>
+  <data name="MSG_MESS_0015" xml:space="preserve">
+    <value>Gửi thông tin lên server không thành công</value>
+  </data>
+  <data name="MSG_MESS_0016" xml:space="preserve">
+    <value>Không thể kết nối đến máy chủ</value>
+  </data>
+  <data name="MSG_MESS_0017" xml:space="preserve">
+    <value>Kết nối máy chủ thành công</value>
+  </data>
+  <data name="MSG_MESS_0018" xml:space="preserve">
+    <value>Mã hóa dữ liệu thành công</value>
+  </data>
+  <data name="MSG_MESS_0019" xml:space="preserve">
+    <value>Mã hóa dữ liệu lỗi</value>
+  </data>
+  <data name="MSG_MESS_0020" xml:space="preserve">
+    <value>Giải mã dữ liệu thành công</value>
+  </data>
+  <data name="MSG_MESS_0021" xml:space="preserve">
+    <value>Giải mã dữ liệu lỗi</value>
+  </data>
+  <data name="MSG_GUI_0012" xml:space="preserve">
+    <value>Gửi</value>
+  </data>
+  <data name="MSG_GUI_0013" xml:space="preserve">
+    <value>Giám thị</value>
+  </data>
+  <data name="MSG_CON_0002" xml:space="preserve">
+    <value>Không thể kết nối tới máy chủ!</value>
+  </data>
+  <data name="MSG_GUI_0014" xml:space="preserve">
+    <value>Thời gian làm bài</value>
+  </data>
+  <data name="MSG_GUI_0015" xml:space="preserve">
+    <value>XÁC NHẬN</value>
+  </data>
+  <data name="MSG_GUI_0016" xml:space="preserve">
+    <value>ĐĂNG NHẬP ➜</value>
+  </data>
+  <data name="MSG_GUI_0017" xml:space="preserve">
+    <value>Số báo danh</value>
+  </data>
+  <data name="MSG_GUI_0018" xml:space="preserve">
+    <value>    {0}</value>
+  </data>
+  <data name="MSG_GUI_0019" xml:space="preserve">
+    <value>»HỆ THỐNG THI TRỰC TUYẾN«</value>
+  </data>
+  <data name="MSG_GUI_0020" xml:space="preserve">
+    <value>Câu {0}.</value>
+  </data>
+  <data name="MSG_GUI_0021" xml:space="preserve">
+    <value>Câu {0}: {1}</value>
+  </data>
+  <data name="MSG_GUI_0022" xml:space="preserve">
+    <value>A.</value>
+  </data>
+  <data name="MSG_GUI_0023" xml:space="preserve">
+    <value>B.</value>
+  </data>
+  <data name="MSG_GUI_0024" xml:space="preserve">
+    <value>C.</value>
+  </data>
+  <data name="MSG_GUI_0025" xml:space="preserve">
+    <value>D.</value>
+  </data>
+  <data name="MSG_GUI_0026" xml:space="preserve">
+    <value>&lt;span style="font-weight: bold"&gt;&lt;u&gt;Câu {0}:&lt;/u&gt;&lt;/span&gt; {1}</value>
+  </data>
+  <data name="MSG_MESS_0022" xml:space="preserve">
+    <value>Danh sách control rỗng.</value>
+  </data>
+  <data name="MSG_GUI_0027" xml:space="preserve">
+    <value>Tải đề thi</value>
+  </data>
+  <data name="MSG_GUI_0028" xml:space="preserve">
+    <value>Đang tải...{0}%</value>
+  </data>
+  <data name="MSG_GUI_0029" xml:space="preserve">
+    <value>&amp;Xong</value>
+  </data>
+  <data name="MSG_MESS_0023" xml:space="preserve">
+    <value>THREAD_GENERATE_{0}_END</value>
+  </data>
+  <data name="MSG_GUI_0030" xml:space="preserve">
+    <value>Nam</value>
+  </data>
+  <data name="MSG_GUI_0031" xml:space="preserve">
+    <value>Nữ</value>
+  </data>
+  <data name="MSG_GUI_0032" xml:space="preserve">
+    <value>Giới tính</value>
+  </data>
+  <data name="MSG_MESS_0024" xml:space="preserve">
+    <value>START_THREAD_{0}</value>
+  </data>
+  <data name="MSG_MESS_0025" xml:space="preserve">
+    <value>Bạn có {0} phút để kiểm tra máy...</value>
+  </data>
+  <data name="MSG_GUI_0033" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="MSG_GUI_0034" xml:space="preserve">
+    <value>Chuẩn bị sẵn sàng làm bài thi. Chúc bạn làm bài thật tốt!</value>
+  </data>
+  <data name="MSG_GUI_0035" xml:space="preserve">
+    <value>Bạn đã nhập sai 3 lần.</value>
+  </data>
+  <data name="MSG_MESS_0026" xml:space="preserve">
+    <value>Cảnh báo</value>
+  </data>
+  <data name="MSG_MESS_0027" xml:space="preserve">
+    <value>Cảnh cáo thí sinh {0} lần thứ {1}</value>
+  </data>
+  <data name="MSG_MESS_0028" xml:space="preserve">
+    <value>TIME OUT</value>
+  </data>
+  <data name="MSG_MESS_0029" xml:space="preserve">
+    <value>➤ Chú ý</value>
+  </data>
+  <data name="MSG_MESS_0030" xml:space="preserve">
+    <value>• Cảnh cáo lần {0} trừ {1}% tổng số điểm.</value>
+  </data>
+  <data name="MSG_MESS_0031" xml:space="preserve">
+    <value>• Cảnh cáo lần 3 sẽ hủy bài thi.</value>
+  </data>
+  <data name="MSG_MESS_0032" xml:space="preserve">
+    <value>Thời gian làm bài bắt đầu! Chúc các bạn thi tốt.</value>
+  </data>
+  <data name="MSG_GUI_0036" xml:space="preserve">
+    <value>Phòng thi</value>
+  </data>
+  <data name="MSG_GUI_0037" xml:space="preserve">
+    <value>Máy thi</value>
+  </data>
+  <data name="MSG_GUI_0038" xml:space="preserve">
+    <value>Đăng nhập với "{0}"</value>
+  </data>
+  <data name="MSG_GUI_0041" xml:space="preserve">
+    <value>Số báo danh</value>
+  </data>
+  <data name="MSG_GUI_0042" xml:space="preserve">
+    <value>Mã sinh viên</value>
+  </data>
+  <data name="MSG_GUI_0043" xml:space="preserve">
+    <value>CMND</value>
+  </data>
+  <data name="MSG_GUI_0044" xml:space="preserve">
+    <value>{0} bạn nhập vào không tồn tại. </value>
+  </data>
+  <data name="MSG_GUI_0045" xml:space="preserve">
+    <value>Có</value>
+  </data>
+  <data name="MSG_GUI_0046" xml:space="preserve">
+    <value>Không</value>
+  </data>
+  <data name="MSG_MESS_0033" xml:space="preserve">
+    <value>Đã thi xong</value>
+  </data>
+  <data name="MSG_MESS_0034" xml:space="preserve">
+    <value>Thi mới</value>
+  </data>
+  <data name="MSG_MESS_0035" xml:space="preserve">
+    <value>Đang thi nhưng bị gián đoạn</value>
+  </data>
+  <data name="MSG_MESS_0036" xml:space="preserve">
+    <value>Tài khoản đang được sử dụng</value>
+  </data>
+  <data name="MSG_GUI_0047" xml:space="preserve">
+    <value>Bạn chắc chắn máy thi của bạn gặp sự cố và cần sự giúp đỡ của giám thị viên?</value>
+  </data>
+  <data name="MSG_GUI_0048" xml:space="preserve">
+    <value>{0} Phút</value>
+  </data>
+  <data name="MSG_MESS_0037" xml:space="preserve">
+    <value>Đăng nhập sai lần thứ {0}</value>
+  </data>
+  <data name="MSG_MESS_0038" xml:space="preserve">
+    <value>Máy thi gặp vấn đề</value>
+  </data>
+  <data name="MSG_GUI_0049" xml:space="preserve">
+    <value>Ca thi</value>
+  </data>
+  <data name="MSG_GUI_0050" xml:space="preserve">
+    <value>Kết quả thi</value>
+  </data>
+  <data name="MSG_GUI_0051" xml:space="preserve">
+    <value>Số điểm bạn đạt được là: {0} điểm trên tổng số {1} điểm</value>
+  </data>
+  <data name="MSG_GUI_0052" xml:space="preserve">
+    <value>Bạn đã đăng nhập sai máy thi.</value>
+  </data>
+  <data name="MSG_GUI_0053" xml:space="preserve">
+    <value>Đã vi phạm lần {0} trừ {1}% tổng số điểm.</value>
+  </data>
+  <data name="MSG_GUI_0054" xml:space="preserve">
+    <value>Bạn đã vi phạm quy chế thi lần thứ {0} và bị trừ {1}% tổng số điểm. Nếu vi phạm 3 lần, bài thi của bạn sẽ bị hủy.</value>
+  </data>
+  <data name="MSG_GUI_0055" xml:space="preserve">
+    <value>Bạn đã vi phạm quy chế thi 3 lần. Bài thi của bạn bị hủy.</value>
+  </data>
+  <data name="MSG_GUI_0056" xml:space="preserve">
+    <value>Môn thi: {0}.</value>
+  </data>
+  <data name="MSG_GUI_0057" xml:space="preserve">
+    <value>Ngày thi: {0} | Ca thi: {1} - {2}.</value>
+  </data>
+  <data name="MSG_GUI_0058" xml:space="preserve">
+    <value>Đăng nhập thành công. Vui lòng chờ để nhận đề bài.</value>
+  </data>
+  <data name="MSG_GUI_0059" xml:space="preserve">
+    <value>Không được bỏ trống thông tin này!</value>
+  </data>
+  <data name="MSG_GUI_0060" xml:space="preserve">
+    <value>Không thể kết nối với máy giám thị.</value>
+  </data>
+  <data name="MSG_GUI_0061" xml:space="preserve">
+    <value>Không thể kết nối đến máy chủ thi.</value>
+  </data>
+  <data name="MSG_GUI_0062" xml:space="preserve">
+    <value>Sai định dạng địa chỉ IP</value>
+  </data>
+  <data name="MSG_MESS_0039" xml:space="preserve">
+    <value>Đăng nhập | Bị gián đoạn lúc thi</value>
+  </data>
+  <data name="DATABASE_NAME" xml:space="preserve">
+    <value>MTA_QUIZ</value>
+  </data>
+  <data name="PASS_DATABASE" xml:space="preserve">
+    <value>1234@mta</value>
+  </data>
+  <data name="PORT_DATABASE" xml:space="preserve">
+    <value>1433</value>
+  </data>
+  <data name="PORT_SUPER" xml:space="preserve">
+    <value>3001</value>
+  </data>
+  <data name="USER_DATABASE" xml:space="preserve">
+    <value>mtauser</value>
+  </data>
+  <data name="IP_DB" xml:space="preserve">
+    <value>169.254.222.235</value>
+  </data>
+  <data name="IP_SUPERVISOR" xml:space="preserve">
+    <value>169.254.225.46</value>
+  </data>
+  <data name="PORT_SUPERVISOR" xml:space="preserve">
+    <value>3001</value>
+  </data>
+</root>

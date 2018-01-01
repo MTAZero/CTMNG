@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="KeHoachThiDataSetxsd" targetNamespace="http://tempuri.org/KeHoachThiDataSetxsd.xsd" xmlns:mstns="http://tempuri.org/KeHoachThiDataSetxsd.xsd" xmlns="http://tempuri.org/KeHoachThiDataSetxsd.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="KeHoachThiDataSetxsd" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="KeHoachThiDataSetxsd" msprop:Generator_UserDSName="KeHoachThiDataSetxsd">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LOCATION" msprop:Generator_TableClassName="LOCATIONDataTable" msprop:Generator_TableVarName="tableLOCATION" msprop:Generator_TablePropName="LOCATION" msprop:Generator_RowDeletingName="LOCATIONRowDeleting" msprop:Generator_RowChangingName="LOCATIONRowChanging" msprop:Generator_RowEvHandlerName="LOCATIONRowChangeEventHandler" msprop:Generator_RowDeletedName="LOCATIONRowDeleted" msprop:Generator_UserTableName="LOCATION" msprop:Generator_RowChangedName="LOCATIONRowChanged" msprop:Generator_RowEvArgName="LOCATIONRowChangeEvent" msprop:Generator_RowClassName="LOCATIONRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STTLocation" msprop:Generator_ColumnVarNameInTable="columnSTTLocation" msprop:Generator_ColumnPropNameInRow="STTLocation" msprop:Generator_ColumnPropNameInTable="STTLocationColumn" msprop:Generator_UserColumnName="STTLocation" type="xs:string" minOccurs="0" />
+              <xs:element name="LocationName" msprop:Generator_ColumnVarNameInTable="columnLocationName" msprop:Generator_ColumnPropNameInRow="LocationName" msprop:Generator_ColumnPropNameInTable="LocationNameColumn" msprop:Generator_UserColumnName="LocationName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SUBJECT" msprop:Generator_TableClassName="SUBJECTDataTable" msprop:Generator_TableVarName="tableSUBJECT" msprop:Generator_TablePropName="SUBJECT" msprop:Generator_RowDeletingName="SUBJECTRowDeleting" msprop:Generator_RowChangingName="SUBJECTRowChanging" msprop:Generator_RowEvHandlerName="SUBJECTRowChangeEventHandler" msprop:Generator_RowDeletedName="SUBJECTRowDeleted" msprop:Generator_UserTableName="SUBJECT" msprop:Generator_RowChangedName="SUBJECTRowChanged" msprop:Generator_RowEvArgName="SUBJECTRowChangeEvent" msprop:Generator_RowClassName="SUBJECTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STTSubject" msprop:Generator_ColumnVarNameInTable="columnSTTSubject" msprop:Generator_ColumnPropNameInRow="STTSubject" msprop:Generator_ColumnPropNameInTable="STTSubjectColumn" msprop:Generator_UserColumnName="STTSubject" type="xs:string" minOccurs="0" />
+              <xs:element name="SubjectName" msprop:Generator_ColumnVarNameInTable="columnSubjectName" msprop:Generator_ColumnPropNameInRow="SubjectName" msprop:Generator_ColumnPropNameInTable="SubjectNameColumn" msprop:Generator_UserColumnName="SubjectName" type="xs:string" minOccurs="0" />
+              <xs:element name="Time" msprop:Generator_ColumnVarNameInTable="columnTime" msprop:Generator_ColumnPropNameInRow="Time" msprop:Generator_ColumnPropNameInTable="TimeColumn" msprop:Generator_UserColumnName="Time" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SHIFT" msprop:Generator_TableClassName="SHIFTDataTable" msprop:Generator_TableVarName="tableSHIFT" msprop:Generator_TablePropName="SHIFT" msprop:Generator_RowDeletingName="SHIFTRowDeleting" msprop:Generator_RowChangingName="SHIFTRowChanging" msprop:Generator_RowEvHandlerName="SHIFTRowChangeEventHandler" msprop:Generator_RowDeletedName="SHIFTRowDeleted" msprop:Generator_UserTableName="SHIFT" msprop:Generator_RowChangedName="SHIFTRowChanged" msprop:Generator_RowEvArgName="SHIFTRowChangeEvent" msprop:Generator_RowClassName="SHIFTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STTShift" msprop:Generator_ColumnVarNameInTable="columnSTTShift" msprop:Generator_ColumnPropNameInRow="STTShift" msprop:Generator_ColumnPropNameInTable="STTShiftColumn" msprop:Generator_UserColumnName="STTShift" type="xs:string" minOccurs="0" />
+              <xs:element name="ShiftName" msprop:Generator_ColumnVarNameInTable="columnShiftName" msprop:Generator_ColumnPropNameInRow="ShiftName" msprop:Generator_ColumnPropNameInTable="ShiftNameColumn" msprop:Generator_UserColumnName="ShiftName" type="xs:string" minOccurs="0" />
+              <xs:element name="ShiftDate" msprop:Generator_ColumnVarNameInTable="columnShiftDate" msprop:Generator_ColumnPropNameInRow="ShiftDate" msprop:Generator_ColumnPropNameInTable="ShiftDateColumn" msprop:Generator_UserColumnName="ShiftDate" type="xs:string" minOccurs="0" />
+              <xs:element name="StartTime" msprop:Generator_ColumnVarNameInTable="columnStartTime" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" msprop:Generator_UserColumnName="StartTime" type="xs:string" minOccurs="0" />
+              <xs:element name="EndTime" msprop:Generator_ColumnVarNameInTable="columnEndTime" msprop:Generator_ColumnPropNameInRow="EndTime" msprop:Generator_ColumnPropNameInTable="EndTimeColumn" msprop:Generator_UserColumnName="EndTime" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="HOIDONGTHI" msprop:Generator_TableClassName="HOIDONGTHIDataTable" msprop:Generator_TableVarName="tableHOIDONGTHI" msprop:Generator_TablePropName="HOIDONGTHI" msprop:Generator_RowDeletingName="HOIDONGTHIRowDeleting" msprop:Generator_RowChangingName="HOIDONGTHIRowChanging" msprop:Generator_RowEvHandlerName="HOIDONGTHIRowChangeEventHandler" msprop:Generator_RowDeletedName="HOIDONGTHIRowDeleted" msprop:Generator_UserTableName="HOIDONGTHI" msprop:Generator_RowChangedName="HOIDONGTHIRowChanged" msprop:Generator_RowEvArgName="HOIDONGTHIRowChangeEvent" msprop:Generator_RowClassName="HOIDONGTHIRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STTHoiDongThi" msprop:Generator_ColumnVarNameInTable="columnSTTHoiDongThi" msprop:Generator_ColumnPropNameInRow="STTHoiDongThi" msprop:Generator_ColumnPropNameInTable="STTHoiDongThiColumn" msprop:Generator_UserColumnName="STTHoiDongThi" type="xs:string" minOccurs="0" />
+              <xs:element name="FullName" msprop:Generator_ColumnVarNameInTable="columnFullName" msprop:Generator_ColumnPropNameInRow="FullName" msprop:Generator_ColumnPropNameInTable="FullNameColumn" msprop:Generator_UserColumnName="FullName" type="xs:string" minOccurs="0" />
+              <xs:element name="LocationName" msprop:Generator_ColumnVarNameInTable="columnLocationName" msprop:Generator_ColumnPropNameInRow="LocationName" msprop:Generator_ColumnPropNameInTable="LocationNameColumn" msprop:Generator_UserColumnName="LocationName" type="xs:string" minOccurs="0" />
+              <xs:element name="PositionName" msprop:Generator_ColumnVarNameInTable="columnPositionName" msprop:Generator_ColumnPropNameInRow="PositionName" msprop:Generator_ColumnPropNameInTable="PositionNameColumn" msprop:Generator_UserColumnName="PositionName" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="ROOMTEST" msprop:Generator_TableClassName="ROOMTESTDataTable" msprop:Generator_TableVarName="tableROOMTEST" msprop:Generator_TablePropName="ROOMTEST" msprop:Generator_RowDeletingName="ROOMTESTRowDeleting" msprop:Generator_RowChangingName="ROOMTESTRowChanging" msprop:Generator_RowEvHandlerName="ROOMTESTRowChangeEventHandler" msprop:Generator_RowDeletedName="ROOMTESTRowDeleted" msprop:Generator_UserTableName="ROOMTEST" msprop:Generator_RowChangedName="ROOMTESTRowChanged" msprop:Generator_RowEvArgName="ROOMTESTRowChangeEvent" msprop:Generator_RowClassName="ROOMTESTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="STTRoomTest" msprop:Generator_ColumnVarNameInTable="columnSTTRoomTest" msprop:Generator_ColumnPropNameInRow="STTRoomTest" msprop:Generator_ColumnPropNameInTable="STTRoomTestColumn" msprop:Generator_UserColumnName="STTRoomTest" type="xs:string" minOccurs="0" />
+              <xs:element name="RoomTestName" msprop:Generator_ColumnVarNameInTable="columnRoomTestName" msprop:Generator_ColumnPropNameInRow="RoomTestName" msprop:Generator_ColumnPropNameInTable="RoomTestNameColumn" msprop:Generator_UserColumnName="RoomTestName" type="xs:string" minOccurs="0" />
+              <xs:element name="LocationName" msprop:Generator_ColumnVarNameInTable="columnLocationName" msprop:Generator_ColumnPropNameInRow="LocationName" msprop:Generator_ColumnPropNameInTable="LocationNameColumn" msprop:Generator_UserColumnName="LocationName" type="xs:string" minOccurs="0" />
+              <xs:element name="MaxSeatMount" msprop:Generator_ColumnVarNameInTable="columnMaxSeatMount" msprop:Generator_ColumnPropNameInRow="MaxSeatMount" msprop:Generator_ColumnPropNameInTable="MaxSeatMountColumn" msprop:Generator_UserColumnName="MaxSeatMount" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{42633F0F-45CF-4897-A895-BD0888FF68C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EOS.Main</RootNamespace>
+    <AssemblyName>EOS.Main</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevelopmentTool">
+      <HintPath>..\..\..\Frameworks\DevelopmentTool\FileHelper\bin\Release\DevelopmentTool.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\Open XML SDK\V2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.11.0.0.0\lib\net\Microsoft.ReportViewer.WebForms.DLL</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="RtfWriter">
+      <HintPath>..\..\..\Frameworks\netrtfwriter-1.0.0\RtfWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Controls\AutoComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Controls\AutoComboBox.Designer.cs">
+      <DependentUpon>AutoComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controls\BufferPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Controls\BufferPanel.designer.cs">
+      <DependentUpon>BufferPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controls\ucBackgroundMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\Controls\ucBackgroundMain.Designer.cs">
+      <DependentUpon>ucBackgroundMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\DocumentProcess\DocumentHelper.cs" />
+    <Compile Include="Core\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Helper\DataHelper.cs" />
+    <Compile Include="Helper\EditorHelper.cs" />
+    <Compile Include="Module\Controls.cs" />
+    <Compile Include="Module\Controls\ucAcceptQuestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Controls\ucAcceptQuestion.Designer.cs">
+      <DependentUpon>ucAcceptQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Controls\ucOriginalTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Controls\ucOriginalTest.Designer.cs">
+      <DependentUpon>ucOriginalTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Controls\ucQuestion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Controls\ucQuestion.Designer.cs">
+      <DependentUpon>ucQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Controls\ucQuestionType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Controls\ucQuestionType.Designer.cs">
+      <DependentUpon>ucQuestionType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Controls\ucStructDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Controls\ucStructDetail.Designer.cs">
+      <DependentUpon>ucStructDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Controls\ucStructureTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Controls\ucStructureTest.Designer.cs">
+      <DependentUpon>ucStructureTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Controls\ucTask.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Controls\ucTask.Designer.cs">
+      <DependentUpon>ucTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Controls\ucTest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Controls\ucTest.Designer.cs">
+      <DependentUpon>ucTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Controls\ucTopic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Controls\ucTopic.Designer.cs">
+      <DependentUpon>ucTopic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Controls\ucTotalStructureDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Controls\ucTotalStructureDetail.Designer.cs">
+      <DependentUpon>ucTotalStructureDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Extensions.cs" />
+    <Compile Include="Module\Forms\FrmEditQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Forms\FrmEditQuestion.Designer.cs">
+      <DependentUpon>FrmEditQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Forms\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Forms\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Report\DataSetReport.cs">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Report\DataSetReport.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Report\FrmStructTestReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Report\FrmStructTestReport.Designer.cs">
+      <DependentUpon>FrmStructTestReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Resources.cs" />
+    <Compile Include="Module\Resources.designer.cs">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Core\Controls\ucBackgroundMain.resx">
+      <DependentUpon>ucBackgroundMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Controls\ucAcceptQuestion.resx">
+      <DependentUpon>ucAcceptQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Controls\ucOriginalTest.resx">
+      <DependentUpon>ucOriginalTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Controls\ucQuestion.resx">
+      <DependentUpon>ucQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Controls\ucQuestionType.resx">
+      <DependentUpon>ucQuestionType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Controls\ucStructDetail.resx">
+      <DependentUpon>ucStructDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Controls\ucStructureTest.resx">
+      <DependentUpon>ucStructureTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Controls\ucTask.resx">
+      <DependentUpon>ucTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Controls\ucTest.resx">
+      <DependentUpon>ucTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Controls\ucTopic.resx">
+      <DependentUpon>ucTopic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Controls\ucTotalStructureDetail.resx">
+      <DependentUpon>ucTotalStructureDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Forms\FrmEditQuestion.resx">
+      <DependentUpon>FrmEditQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Forms\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Report\FrmStructTestReport.resx">
+      <DependentUpon>FrmStructTestReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Report\StructTestReport.rdlc" />
+    <EmbeddedResource Include="Module\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Module\Report\DataSetReport.xsc">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </None>
+    <None Include="Module\Report\DataSetReport.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetReport.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Module\Report\DataSetReport.xss">
+      <DependentUpon>DataSetReport.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EXON.Common\EXON.Common.csproj">
+      <Project>{df92320d-cd11-499b-8002-ff00b40f101a}</Project>
+      <Name>EXON.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON.Data\EXON.Data.csproj">
+      <Project>{353009d7-cce4-4d0d-8374-c9e8accd2f39}</Project>
+      <Name>EXON.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON.Model\EXON.Model.csproj">
+      <Project>{b89723b7-c9bb-49c5-97b2-81f7fe7750ce}</Project>
+      <Name>EXON.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

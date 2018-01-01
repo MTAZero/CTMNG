@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{92C00DFD-B9ED-4859-84EC-ECE17C9B1743}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EXON_EM.Data</RootNamespace>
+    <AssemblyName>EXON_EM.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Enum\Contest_Enum.cs" />
+    <Compile Include="Helper.cs" />
+    <Compile Include="Interface\IService.cs" />
+    <Compile Include="Model\ANSWER.cs" />
+    <Compile Include="Model\ANSWERSHEET.cs" />
+    <Compile Include="Model\ANSWERSHEET_DETAILS.cs" />
+    <Compile Include="Model\BAGOFTEST.cs" />
+    <Compile Include="Model\CONTEST.cs" />
+    <Compile Include="Model\CONTESTANT.cs" />
+    <Compile Include="Model\CONTESTANTS_SHIFTS.cs" />
+    <Compile Include="Model\CONTESTANTS_SUBJECTS.cs" />
+    <Compile Include="Model\CONTESTANTS_TESTS.cs" />
+    <Compile Include="Model\CONTESTANT_TYPES.cs" />
+    <Compile Include="Model\CONTEST_FEES.cs" />
+    <Compile Include="Model\CONTEST_TYPES.cs" />
+    <Compile Include="Model\C__MigrationHistory.cs" />
+    <Compile Include="Model\DEMO_FINGERPRINTS.cs" />
+    <Compile Include="Model\DEPARTMENT.cs" />
+    <Compile Include="Model\DIVISION_SHIFTS.cs" />
+    <Compile Include="Model\EXAMINATIONCOUNCIL_POSITIONS.cs" />
+    <Compile Include="Model\EXAMINATIONCOUNCIL_STAFFS.cs" />
+    <Compile Include="Model\EXON_DbContext.cs" />
+    <Compile Include="Model\FINGERPRINT.cs" />
+    <Compile Include="Model\LOCATION.cs" />
+    <Compile Include="Model\MODULE.cs" />
+    <Compile Include="Model\ORIGINAL_TESTS.cs" />
+    <Compile Include="Model\ORIGINAL_TEST_DETAILS.cs" />
+    <Compile Include="Model\POSITION.cs" />
+    <Compile Include="Model\QUESTION.cs" />
+    <Compile Include="Model\QUESTION_TYPES.cs" />
+    <Compile Include="Model\RECEIPT.cs" />
+    <Compile Include="Model\REGISTER.cs" />
+    <Compile Include="Model\REGISTERS_SUBJECTS.cs" />
+    <Compile Include="Model\REMINDER.cs" />
+    <Compile Include="Model\ROOMDIAGRAM.cs" />
+    <Compile Include="Model\ROOMTEST.cs" />
+    <Compile Include="Model\SCHEDULE.cs" />
+    <Compile Include="Model\SHIFT.cs" />
+    <Compile Include="Model\STAFF.cs" />
+    <Compile Include="Model\STAFFS_POSITIONS.cs" />
+    <Compile Include="Model\STRUCTURE.cs" />
+    <Compile Include="Model\STRUCTURE_DETAILS.cs" />
+    <Compile Include="Model\SUBJECT.cs" />
+    <Compile Include="Model\SUBQUESTION.cs" />
+    <Compile Include="Model\TEST.cs" />
+    <Compile Include="Model\TEST_DETAILS.cs" />
+    <Compile Include="Model\TOPIC.cs" />
+    <Compile Include="Model\TOPICS_STAFFS.cs" />
+    <Compile Include="Model\VIOLATION.cs" />
+    <Compile Include="Model\VIOLATIONS_CONTESTANTS.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service\ContestType_Service.cs" />
+    <Compile Include="Service\Schedule_Service.cs" />
+    <Compile Include="Service\Subject_Service.cs" />
+    <Compile Include="Service\Contest_Service.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

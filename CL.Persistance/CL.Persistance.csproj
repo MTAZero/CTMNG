@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3419F9EC-330E-4340-818E-AAE963B4B28F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CL.Persistance</RootNamespace>
+    <AssemblyName>CL.Persistance</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\WF.Presentation\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\WF.Presentation\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnalogClock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnalogClock.Designer.cs">
+      <DependentUpon>AnalogClock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ANSWER.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ANSWERSHEET.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ANSWERSHEET_DETAILS.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ANSWERS_TEMP.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BAGOFTEST.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Common.cs" />
+    <Compile Include="CONTEST.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CONTESTANT.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CONTESTANTS_SHIFTS.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CONTESTANTS_TESTS.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DAO\DatetimeConvert.cs" />
+    <Compile Include="DAO\Report.cs" />
+    <Compile Include="DIVISIONSHIFT_SUPERVISOR.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DIVISION_SHIFTS.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EXAMINATIONCOUNCIL_POSITIONS.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EXAMINATIONCOUNCIL_STAFFS.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FINGERPRINT.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="LOCATION.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MTAQuizModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MTAQuizModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MTAQuizModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MTAQuizModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MTAQuizModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="POSITION.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="QUESTION.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QUESTIONS_TEMP.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ROOMDIAGRAM.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ROOMTEST.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SCHEDULE.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SHIFT.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STAFF.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="STAFFS_POSITIONS.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SUBJECT.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SUBQUESTION.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SUBQUESTIONS_TEMP.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysdiagram.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TEST.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TEST_DETAILS.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VIOLATION.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="VIOLATIONS_CONTESTANTS.cs">
+      <DependentUpon>MTAQuizModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="MTAQuizModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MTAQuizModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="MTAQuizModel.edmx.diagram">
+      <DependentUpon>MTAQuizModel.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MTAQuizModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MTAQuizModel.edmx</DependentUpon>
+      <LastGenOutput>MTAQuizModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="MTAQuizModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MTAQuizModel.edmx</DependentUpon>
+      <LastGenOutput>MTAQuizModel.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

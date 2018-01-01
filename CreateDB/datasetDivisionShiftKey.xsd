@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="datasetDivisionShiftKey" targetNamespace="http://tempuri.org/datasetDivisionShiftKey.xsd" xmlns:mstns="http://tempuri.org/datasetDivisionShiftKey.xsd" xmlns="http://tempuri.org/datasetDivisionShiftKey.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="-1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MTA_QUIZConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MTA_QUIZConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.CreateDB.Properties.Settings.GlobalReference.Default.MTA_QUIZConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MTA_QUIZConnectionString (Settings)" DbObjectName="" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ROOMTESTS.RoomTestName, DATEADD(ss, SHIFTS.ShiftDate, '1970-01-01') AS ShiftDate, CONVERT(char(8), DATEADD(second, SHIFTS.StartTime, ''), 114) AS StartTime, CONVERT(char(8), DATEADD(second, 
+                         SHIFTS.EndTime, ''), 114) AS EndTime, DIVISION_SHIFTS.[Key], LOCATIONS.LocationName, CONTESTS.ContestName
+FROM            SHIFTS INNER JOIN
+                         DIVISION_SHIFTS ON SHIFTS.ShiftID = DIVISION_SHIFTS.ShiftID INNER JOIN
+                         ROOMTESTS ON DIVISION_SHIFTS.RoomTestID = ROOMTESTS.RoomTestID INNER JOIN
+                         LOCATIONS ON ROOMTESTS.LocationID = LOCATIONS.LocationID INNER JOIN
+                         CONTESTS ON SHIFTS.ContestID = CONTESTS.ContestID AND LOCATIONS.ContestID = CONTESTS.ContestID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RoomTestName" DataSetColumn="RoomTestName" />
+              <Mapping SourceColumn="ShiftDate" DataSetColumn="ShiftDate" />
+              <Mapping SourceColumn="StartTime" DataSetColumn="StartTime" />
+              <Mapping SourceColumn="EndTime" DataSetColumn="EndTime" />
+              <Mapping SourceColumn="Key" DataSetColumn="Key" />
+              <Mapping SourceColumn="LocationName" DataSetColumn="LocationName" />
+              <Mapping SourceColumn="ContestName" DataSetColumn="ContestName" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="datasetDivisionShiftKey" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="datasetDivisionShiftKey" msprop:Generator_UserDSName="datasetDivisionShiftKey">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RoomTestName" msprop:Generator_ColumnVarNameInTable="columnRoomTestName" msprop:Generator_ColumnPropNameInRow="RoomTestName" msprop:Generator_ColumnPropNameInTable="RoomTestNameColumn" msprop:Generator_UserColumnName="RoomTestName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShiftDate" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnShiftDate" msprop:Generator_ColumnPropNameInRow="ShiftDate" msprop:Generator_ColumnPropNameInTable="ShiftDateColumn" msprop:Generator_UserColumnName="ShiftDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="StartTime" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnStartTime" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" msprop:Generator_UserColumnName="StartTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="EndTime" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnEndTime" msprop:Generator_ColumnPropNameInRow="EndTime" msprop:Generator_ColumnPropNameInTable="EndTimeColumn" msprop:Generator_UserColumnName="EndTime" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Key" msprop:Generator_ColumnVarNameInTable="columnKey" msprop:Generator_ColumnPropNameInRow="Key" msprop:Generator_ColumnPropNameInTable="KeyColumn" msprop:Generator_UserColumnName="Key" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LocationName" msprop:Generator_ColumnVarNameInTable="columnLocationName" msprop:Generator_ColumnPropNameInRow="LocationName" msprop:Generator_ColumnPropNameInTable="LocationNameColumn" msprop:Generator_UserColumnName="LocationName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ContestName" msprop:Generator_ColumnVarNameInTable="columnContestName" msprop:Generator_ColumnPropNameInRow="ContestName" msprop:Generator_ColumnPropNameInTable="ContestNameColumn" msprop:Generator_UserColumnName="ContestName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7975717D-162A-43A7-A669-DAFB51B3B308}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>EXON.RegisterManager</RootNamespace>
+    <AssemblyName>EXON.RegisterManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>EXON.RegisterManager.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1498851056_License-manager.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="libzkfpcsharp, Version=1.0.0.1, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\libzkfpcsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\WF.Presentation\GeneralManagement\bin\Debug\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\Duy\RM\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportDesigner">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\PrivateAssemblies\Microsoft.ReportDesigner.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.10.0.0.0\lib\net\Microsoft.ReportViewer.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Report.Viewer.10.0.0.0\lib\net\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Core\Controls\AutoComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Controls\AutoComboBox.Designer.cs">
+      <DependentUpon>AutoComboBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controls\BufferPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Core\Controls\BufferPanel.designer.cs">
+      <DependentUpon>BufferPanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\Controls\ucBackgroundMain.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Core\Controls\ucBackgroundMain.Designer.cs">
+      <DependentUpon>ucBackgroundMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Core\SplashForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Controls.cs" />
+    <Compile Include="Module\Controls\ucQuanLiThiSinh.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Controls\ucQuanLiThiSinh.Designer.cs">
+      <DependentUpon>ucQuanLiThiSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Controls\ucQuanLiDangKi.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Module\Controls\ucQuanLiDangKi.Designer.cs">
+      <DependentUpon>ucQuanLiDangKi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Extensions.cs" />
+    <Compile Include="Module\Forms\frmConfig.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Forms\frmConfig.designer.cs">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Forms\frmDangKi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Forms\frmDangKi.Designer.cs">
+      <DependentUpon>frmDangKi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Forms\frmInfoRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Forms\frmInfoRegister.designer.cs">
+      <DependentUpon>frmInfoRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Forms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Forms\frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Forms\frmThongTinThiSinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Forms\frmThongTinThiSinh.designer.cs">
+      <DependentUpon>frmThongTinThiSinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Report\frmReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\Report\frmReport.Designer.cs">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Module\Report\Receipt.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Receipt.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.cs" />
+    <EmbeddedResource Include="Core\Controls\ucBackgroundMain.resx">
+      <DependentUpon>ucBackgroundMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Core\SplashForm.resx">
+      <DependentUpon>SplashForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Controls\ucQuanLiThiSinh.resx">
+      <DependentUpon>ucQuanLiThiSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Controls\ucQuanLiDangKi.resx">
+      <DependentUpon>ucQuanLiDangKi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Forms\frmConfig.resx">
+      <DependentUpon>frmConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Forms\frmDangKi.resx">
+      <DependentUpon>frmDangKi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Forms\frmInfoRegister.resx">
+      <DependentUpon>frmInfoRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Forms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Forms\frmThongTinThiSinh.resx">
+      <DependentUpon>frmThongTinThiSinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Report\frmReport.resx">
+      <DependentUpon>frmReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\Report\rptReceipt.rdlc" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Module\Report\Receipt.xsc">
+      <DependentUpon>Receipt.xsd</DependentUpon>
+    </None>
+    <None Include="Module\Report\Receipt.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Receipt.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Module\Report\Receipt.xss">
+      <DependentUpon>Receipt.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Core\Controls\Helpers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1498851056_License-manager.ico" />
+    <Content Include="Iconshock-Cms-User-login.ico" />
+    <None Include="Resources\check16.png" />
+    <None Include="Resources\refresh162.png" />
+    <None Include="Resources\delete161.png" />
+    <None Include="Resources\delete16.png" />
+    <None Include="Resources\search16.png" />
+    <None Include="Resources\search24.png" />
+    <None Include="Resources\exl16.png" />
+    <None Include="Resources\Excel-icon.png" />
+    <None Include="Resources\add16.png" />
+    <None Include="Resources\Actions-list-add-icon %281%29.png" />
+    <None Include="Resources\filter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EXON.Common\EXON.Common.csproj">
+      <Project>{df92320d-cd11-499b-8002-ff00b40f101a}</Project>
+      <Name>EXON.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON.Data\EXON.Data.csproj">
+      <Project>{353009d7-cce4-4d0d-8374-c9e8accd2f39}</Project>
+      <Name>EXON.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON.GetFinger\EXON.GetFinger.csproj">
+      <Project>{52584845-7921-48b8-b3d0-f88912dc4f74}</Project>
+      <Name>EXON.GetFinger</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON.Model\EXON.Model.csproj">
+      <Project>{b89723b7-c9bb-49c5-97b2-81f7fe7750ce}</Project>
+      <Name>EXON.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EXON.Register\EXON.Register.csproj">
+      <Project>{a58c45d9-a445-4d68-967c-dfa950e0a0ae}</Project>
+      <Name>EXON.Register</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
