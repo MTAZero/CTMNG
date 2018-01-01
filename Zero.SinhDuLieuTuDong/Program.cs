@@ -16,7 +16,7 @@ namespace Zero.SinhDuLieuTuDong
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMain(6));
+            Application.Run(new FrmMain(78));
         }
     }
 }

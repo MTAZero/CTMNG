@@ -38,7 +38,7 @@ namespace Zero.SinhDuLieuTuDong
                                                     )
                                                     .ToList()
                                                );
-
+                db.SaveChanges();
 
                 /// Xóa Contestant Subject
                 db.CONTESTANTS_SUBJECTS.RemoveRange(
@@ -50,6 +50,7 @@ namespace Zero.SinhDuLieuTuDong
                                                       )
                                                       .ToList()
                                                  );
+                db.SaveChanges();
 
                 /// Xóa Regiter Subject
                 db.REGISTERS_SUBJECTS.RemoveRange(
@@ -60,6 +61,7 @@ namespace Zero.SinhDuLieuTuDong
                                                       )
                                                       .ToList()
                                                  );
+                db.SaveChanges();
 
                 /// Xóa Receipt
                 db.RECEIPTS.RemoveRange(
@@ -70,6 +72,7 @@ namespace Zero.SinhDuLieuTuDong
                                                       )
                                                       .ToList()
                                             );
+                db.SaveChanges();
 
                 /// Xóa finger Print
                 db.FINGERPRINTS.RemoveRange(
@@ -81,6 +84,7 @@ namespace Zero.SinhDuLieuTuDong
                                                       )
                                                       .ToList()
                                             );
+                db.SaveChanges();
 
                 /// Xóa contestant
                 db.CONTESTANTS.RemoveRange(
@@ -155,15 +159,17 @@ namespace Zero.SinhDuLieuTuDong
                     /// Thêm Register Subject
 
                     var listMonThi = db.SCHEDULES.Where(p => p.ContestID == kithi.ContestID && p.Status > 0).ToList();
-                    for (int j = 0; j <= 999; j++) kt[j] = true;
-
-                    for (int j = 1; j <= SoMonThiThiSinh; j++)
+                   
+                    for (int jx = 1; jx <= SoMonThiThiSinh; jx++)
                     {
+                        for (int j = 0; j <= 999; j++) kt[j] = true;
+
                         Random rd = new Random();
 
                         while (true)
                         {
-                            int stt = rd.Next(0, listMonThi.Count - 1);
+                            int stt = rd.Next(0, listMonThi.Count );
+
                             if (kt[stt] == true)
                             {
                                 kt[stt] = false;
