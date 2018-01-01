@@ -403,8 +403,13 @@ namespace EXON_ExamManagement
             try
             {
                 int idKiThi = (int)dgvContest.SelectedRows[0].Cells["ID"].Value;
+
+
                 EXON.RegisterManager.Module.frmMain formMain = new EXON.RegisterManager.Module.frmMain(idKiThi, BaseControl.CurrentStaffId);
-                //formMain.ShowDialog();
+                ////formMain.ShowDialog();
+
+                //Zero.SinhDuLieuTuDong.Start.SinhDuLieuNgauNhien(idKiThi);
+
                 UpdateContestStatus();
             }
             catch
